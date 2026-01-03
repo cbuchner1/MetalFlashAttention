@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "torch>=2.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "metal-flash-attention"
+version = "1.0.0"
+description = "Metal-accelerated FlashAttention for PyTorch on Apple Silicon"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [
+    {name = "Metal FlashAttention Contributors"}
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: MacOS :: MacOS X",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+keywords = ["attention", "transformer", "metal", "apple-silicon", "pytorch", "flash-attention"]
+dependencies = [
+    "torch>=2.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/metal-flash-attention/metal-flash-attention"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["metal_flash_attention*"]
