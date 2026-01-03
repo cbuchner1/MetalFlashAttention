@@ -163,7 +163,7 @@ Features:
 - Buffer caching for reduced allocation overhead
 - Supports head dimensions up to 128
 
-## Limitations
+## WIP
 
 - Currently supports FP32 and BF16 (converted to FP32 internally)
 - Paged KV cache (block_table) not yet supported
