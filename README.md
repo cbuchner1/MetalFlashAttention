@@ -22,7 +22,7 @@ Benchmarked on Apple M4 Max with 8 attention heads and 64 head dimension:
 ## Installation
 
 ```bash
-git clone https://github.com/your-repo/metal-flash-attention.git
+git clone https://github.com/zimengxiong/metal-flash-attention.git
 cd metal-flash-attention
 pip install -e .
 ```
